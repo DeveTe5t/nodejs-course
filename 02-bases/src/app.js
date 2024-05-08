@@ -1,11 +1,11 @@
 // Not working default in node
 // import { emailTemplate } from './js-foundation/01-template';
 
-// console.log('Hey there! from app.js');
 
 // const templateExports = require('./js-foundation/01-template');
+// console.log(templateExports.emailTemplate);
+
 const { emailTemplate } = require('./js-foundation/01-template');
+require('./js-foundation/02-destructuring');
 
 // console.log(emailTemplate);
-// console.log(templateExports.emailTemplate);
-console.log(emailTemplate);
