@@ -11,5 +11,9 @@
     "start:stag": "echo 'Hey there! from start:stag'"
   },
   "author": "J^G2",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "get-age": "^1.0.1",
+    "uuid": "^9.0.1"
+  }
 }
