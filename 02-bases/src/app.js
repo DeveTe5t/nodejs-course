@@ -11,7 +11,17 @@
 // require('./js-foundation/02-destructuring');
 // const { getUserById } = require('./js-foundation/03-callbacks');
 // const { getUserById, getUserByIdArrow } = require('./js-foundation/04-arrow');
-require('./js-foundation/05-factory');
+const { getAge, getUUID } = require('./plugins');
+
+const { buildMakePerson } = require('./js-foundation/05-factory');
+
+const makePerson = buildMakePerson({ getUUID, getAge });
+
+const obj = { name: 'John', birthdate: '1980-05-13' };
+
+const john = makePerson(obj);
+
+console.log(john);
 
 // const id = 1;
 
