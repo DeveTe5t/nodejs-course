@@ -1,6 +1,6 @@
 
 
-const getPokemonById = (id, callback) => {
+const getPokemonById = async (id) => {
     // return new Promise((resolve, reject) => {
     //     fetch(`https://pokeapi.co/api/v2/pokemon/${id}`)
     //         .then(response => response.json())
@@ -10,11 +10,17 @@ const getPokemonById = (id, callback) => {
 
     const url = `https://pokeapi.co/api/v2/pokemon/${id}`;
 
-    // Way 3
-    return fetch(url)
-        .then((response) => response.json())
-        .then(() => { throw new Error('Pokemon not exists!') })
-        .then((pokemon) => pokemon.name);
+    const response = await fetch(url);
+    const pokemon = await response.json();
+
+    // throw new Error('Pokemon not exists!');
+    return pokemon.name;
+
+    // // Way 3
+    // return fetch(url)
+    //     .then((response) => response.json())
+    //     // .then(() => { throw new Error('Pokemon not exists!') })
+    //     .then((pokemon) => pokemon.name);
 
     // // Way 2
     // fetch(url)
