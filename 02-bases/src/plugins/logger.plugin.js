@@ -1,10 +1,15 @@
 const winston = require('winston');
 const { combine, timestamp, json } = winston.format;
 
+const timezoned = () => new Date().toLocaleString('es-MX', {
+    timeZone: Intl.DateTimeFormat().format().timeZone
+});
+
 const logger = winston.createLogger({
     level: 'info',
     // format: winston.format.json(),
-    format: combine(timestamp(), json(),),
+    // format: combine(timestamp(), json(),),
+    format: combine(timestamp({ format: timezoned }), json(),),
     // defaultMeta: { service: 'user-service' },
     transports: [
 
