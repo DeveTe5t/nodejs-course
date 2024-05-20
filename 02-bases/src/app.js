@@ -12,7 +12,14 @@
 // const { getUserById } = require('./js-foundation/03-callbacks');
 // const { getUserById, getUserByIdArrow } = require('./js-foundation/04-arrow');
 // const { getAge, getUUID } = require('./plugins');
-const getPokemonById = require('./js-foundation/06-promises');
+// const getPokemonById = require('./js-foundation/06-promises');
+const { buildLogger } = require('./plugins');
+
+
+const logger = buildLogger('app.js');
+
+logger.log('Hello there!');
+logger.error('This is something wrong');
 
 // // Way 1 and 2
 // getPokemonById(1, (pokemon) => {
@@ -20,10 +27,10 @@ const getPokemonById = require('./js-foundation/06-promises');
 // });
 
 // Way 3
-getPokemonById(1)
-    .then((pokemon) => console.log({ pokemon }))
-    .catch((error) => console.error({ error }))
-    .finally(() => console.log('Finally!'));
+// getPokemonById(1)
+//     .then((pokemon) => console.log({ pokemon }))
+//     .catch((error) => console.error({ error }))
+//     .finally(() => console.log('Finally!'));
 
 
 
