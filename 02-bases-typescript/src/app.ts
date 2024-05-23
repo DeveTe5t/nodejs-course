@@ -1,4 +1,5 @@
-import { buildLogger } from "./plugins/logger.plugin";
+import { getPokemonById } from "./js-foundation/06-promises";
+import { buildLogger } from "./plugins";
 // // Not working default in node
 // // import { emailTemplate } from './js-foundation/01-template';
 
@@ -15,6 +16,10 @@ import { buildLogger } from "./plugins/logger.plugin";
 // // const { getUserById, getUserByIdArrow } = require('./js-foundation/04-arrow');
 // // const { getAge, getUUID } = require('./plugins');
 // // const getPokemonById = require('./js-foundation/06-promises');
+
+getPokemonById(3)
+    .then((pokemon) => console.log({ pokemon }))
+    .catch((error) => console.error({ error }));
 
 
 // const { buildLogger } = require('./plugins');
