@@ -1,4 +1,4 @@
-# 04 Node Typescript - TEST
+# 03 Node bases - TypeScript
 
 * The first thing we need to do after downloading the code is to run the command:
 
@@ -27,13 +27,6 @@ Generate files for production which executes the 'build' command.
 
 ```
 npm run start
-```
-
-## test
-To run the tests and monitor for changes.
-
-```
-npm run test:watch
 ```
 
 # nodejs-course
