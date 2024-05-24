@@ -10,5 +10,3 @@ That command will download all the necessary Node modules to run the project
 # Every section
 In each section, the commands to execute are specified.
 
-# nodejs-course
-Nodejs
