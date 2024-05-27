@@ -2,8 +2,27 @@ import { buildMakePerson } from "../../src/js-foundation/05-factory";
 
 describe('js-foundation/05-factory.ts', () => {
 
-    test('buildMakePerson should return a person with id1, id2, name, birthdate and age', (done) => {
+    const getUUID = () => ({ id1: '1234', id2: '5678' });
+    const getAge = () => 40;
 
-        done();
+    // if code is sync not need done
+    test('buildMakePerson should return a function', () => {
+
+        const makePerson = buildMakePerson({ getUUID, getAge });
+        expect(typeof makePerson).toBe('function');
+    });
+
+    test('buildMakePerson should return a person', () => {
+
+        const makePerson = buildMakePerson({ getUUID, getAge });
+        const johnDoe = makePerson({ name: 'John Doe', birthdate: '1980-12-12' });
+
+        expect(johnDoe).toEqual({
+            id1: '1234',
+            id2: '5678',
+            name: 'John Doe',
+            birthdate: '1980-12-12',
+            age: 40,
+        });
     });
 });
