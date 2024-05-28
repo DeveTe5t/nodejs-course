@@ -13,6 +13,6 @@ describe('Test in the App File', () => {
         const result = number1 + number2;
 
         // 3. Assert
-        expect(result).toBe(40);
+        expect(result).toBe(30);
     });
 });
