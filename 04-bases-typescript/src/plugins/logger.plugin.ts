@@ -7,7 +7,7 @@ const { combine, timestamp, json } = format;
 //     timeZone: Intl.DateTimeFormat().format().timeZone,
 // });
 
-const logger = winston.createLogger({
+export const logger = winston.createLogger({
     level: 'info',
     // format: winston.format.json(),
     format: combine(timestamp(), json(),),
