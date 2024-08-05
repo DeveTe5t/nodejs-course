@@ -1,3 +1,4 @@
+import "@types/jest";
 import { getUserById, getUserByIdArrow } from "../../src/js-foundation/04-arrow";
 
 describe('js-foundation/04-arrow.ts', () => {

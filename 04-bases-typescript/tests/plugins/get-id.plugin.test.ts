@@ -1,3 +1,4 @@
+import "@types/jest";
 import { getUUID } from "../../src/plugins";
 
 

@@ -1,3 +1,4 @@
+import "@types/jest";
 import { httpClientPlugin } from "../../src/plugins/http-client.plugin";
 
 describe('plugins/http-client.plugin.ts', () => {

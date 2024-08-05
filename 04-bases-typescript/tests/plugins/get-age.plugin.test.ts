@@ -1,3 +1,4 @@
+import "@types/jest";
 import { getAge } from "../../src/plugins";
 
 describe('plugins/get-age.plugin.ts', () => {

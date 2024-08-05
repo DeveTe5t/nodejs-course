@@ -1,3 +1,4 @@
+import "@types/jest";
 import { getPokemonById } from '../../src/js-foundation/06-promises';
 
 describe('js-foundation/06-promises.ts', () => {
