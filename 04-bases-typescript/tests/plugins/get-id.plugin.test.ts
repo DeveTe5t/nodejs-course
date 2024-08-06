@@ -1,5 +1,5 @@
+import "@types/jest";
 import { getUUID } from "../../src/plugins";
-
 
 describe('plugins/get-id.plugins.ts', () => {
 

@@ -1,3 +1,4 @@
+import "@types/jest";
 import { getUserById } from "../../src/js-foundation/03-callbacks";
 
 describe('js-foundation/03-callbacks.ts', () => {
