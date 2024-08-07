@@ -1,4 +1,4 @@
-import "@types/jest";
+import { describe, test, expect } from '@jest/globals';
 import { getUserById, getUserByIdArrow } from "../../src/js-foundation/04-arrow";
 
 describe('js-foundation/04-arrow.ts', () => {

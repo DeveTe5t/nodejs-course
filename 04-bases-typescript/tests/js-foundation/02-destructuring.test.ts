@@ -1,4 +1,4 @@
-import "@types/jest";
+import { describe, test, expect } from '@jest/globals';
 import { characters } from "../../src/js-foundation/02-destructuring";
 
 describe('js-foundation/02-destructuring.ts', () => {

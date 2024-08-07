@@ -1,4 +1,4 @@
-import "@types/jest";
+import { describe, test, expect } from '@jest/globals';
 import { buildMakePerson } from "../../src/js-foundation/05-factory";
 
 describe('js-foundation/05-factory.ts', () => {
