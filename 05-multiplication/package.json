@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node src/app.ts",
+    "dev": "ts-node src/app.ts -b 10",
     "dev:nodemon": "nodemon",
     "deve": "tsc -w && node --watch src/app.js",
     "build": "rimraf ./dist && tsc",
