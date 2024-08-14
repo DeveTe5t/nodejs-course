@@ -1,4 +1,4 @@
-import "@types/jest";
+import { describe, test, expect } from '@jest/globals';
 import { httpClientPlugin } from "../../src/plugins/http-client.plugin";
 
 describe('plugins/http-client.plugin.ts', () => {

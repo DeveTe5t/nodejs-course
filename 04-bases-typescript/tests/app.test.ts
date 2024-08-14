@@ -1,4 +1,5 @@
-import "@types/jest";
+// import "@types/jest"
+import { describe, test, expect } from '@jest/globals';
 // A A A
 
 describe('Test in the App File', () => {

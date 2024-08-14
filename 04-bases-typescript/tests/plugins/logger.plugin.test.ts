@@ -1,4 +1,4 @@
-import "@types/jest";
+import { describe, test, expect, jest } from '@jest/globals';
 import { buildLogger, logger as winstonLogger } from '../../src/plugins/logger.plugin';
 
 describe('plugins/logger.plugin.ts', () => {

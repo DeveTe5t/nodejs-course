@@ -1,4 +1,4 @@
-import "@types/jest";
+import { describe, test, expect } from '@jest/globals';
 import { getPokemonById } from '../../src/js-foundation/06-promises';
 
 describe('js-foundation/06-promises.ts', () => {

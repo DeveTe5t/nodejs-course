@@ -1,6 +1,5 @@
-import "@types/jest";
+import { describe, test, expect } from '@jest/globals';
 import { getUUID } from "../../src/plugins";
-
 
 describe('plugins/get-id.plugins.ts', () => {
 
