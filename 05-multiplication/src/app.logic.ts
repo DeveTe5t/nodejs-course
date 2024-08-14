@@ -16,7 +16,11 @@
 import fs from 'fs';
 import { yarg } from './config/plugins/args.plugin';
 
-const { b: baseMultiplication, l: limitMultiplication, s: showTableMultiplication } = yarg;
+const {
+    b: baseMultiplication,
+    l: limitMultiplication,
+    s: showTableMultiplication
+} = yarg;
 
 let outputMessage = '';
 // const base = 9;

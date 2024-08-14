@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "ts-node src/app.ts",
-    "dev:nodemon": "nodemon",
+    "dev:nodemon": "nodemon -b 9",
     "deve": "tsc -w && node --watch src/app.js",
     "build": "rimraf ./dist && tsc",
     "start": "npm run build && node dist/app.js"
