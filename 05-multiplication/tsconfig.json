@@ -1,6 +1,8 @@
 {
   "exclude": [
-    "node_moodules"
+    "node_moodules",
+    "dist",
+    "src/**/*.test.ts"
   ],
   "include": [
     "src/**/*"
