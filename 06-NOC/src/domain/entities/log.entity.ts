@@ -2,7 +2,7 @@
 export enum LogSeverityLevel {
     low = 'low',
     medium = 'medium',
-    height = 'height'
+    heigh = 'heigh'
 }
 
 export class LogEntity {
@@ -12,7 +12,6 @@ export class LogEntity {
     public createdAt: Date;
 
     constructor(level: LogSeverityLevel, message: string) {
-
         this.level = level;
         this.message = message;
         this.createdAt = new Date();
