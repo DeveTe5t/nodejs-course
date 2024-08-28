@@ -16,7 +16,6 @@ export class FileSystemDatasource implements LogDatasource {
     }
 
     private createLogsFile = () => {
-
         if (!fs.existsSync(this.logPath)) {
             fs.mkdirSync(this.logPath);
         }
