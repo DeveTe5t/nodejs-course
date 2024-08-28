@@ -12,7 +12,11 @@ export class Server {
             () => {
                 // const date = new Date();
                 // console.log('5 second', date);
-                new CheckService().execute('https://google.com');
+                const url = 'https://google.com';
+                new CheckService(
+                    () => console.log(`${url} is ok`),
+                    (error) => console.log(`Error: ${error}`)
+                ).execute(url);
                 // new CheckService().execute('http://localhost:3000/posts');
             }
         );
