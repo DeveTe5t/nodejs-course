@@ -18,9 +18,9 @@ export class Server {
         console.log('Server started...');
 
         // send email
-        new SendEmailLogs(emailService, fileSystemLogRepository).execute(
-            ['mail@gmail.com', 'mail2@gmail.com']
-        );
+        // new SendEmailLogs(emailService, fileSystemLogRepository).execute(
+        //     ['mail@gmail.com', 'mail2@gmail.com']
+        // );
         // const emailService = new EmailService(fileSystemLogRepository);
         // emailService.sendEmailWithFileSystemLogs(
         //     ['mail@gmail.com', 'email2@gmail.com']
