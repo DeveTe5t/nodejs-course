@@ -8,6 +8,7 @@ The goal is to create a series of tasks using Clean Architecture with TypeScript
 ```
 PORT=3000
 
+MAILER_SERVICE=gmail
 MAILER_EMAIL=
 MAILER_SECRET_KEY=
 
