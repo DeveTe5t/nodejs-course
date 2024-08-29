@@ -3,7 +3,7 @@
 import { FileSystemDatasource } from "../infrastructure/datasources/file-system.datasource";
 import { LogRepositoryImpl } from "../infrastructure/repositories/log.repository.impl";
 // import { CronService } from "./cron/cron-service";
-import { EmailService } from "./email/email.service";
+// import { EmailService } from "./email/email.service";
 
 const fileSystemLogRepository = new LogRepositoryImpl(
     new FileSystemDatasource(),
@@ -15,7 +15,7 @@ export class Server {
         console.log('Server started...');
 
         // send email
-        // const emailService = new EmailService();
+        // const emailService = new EmailService(fileSystemLogRepository);
         // emailService.sendEmailWithFileSystemLogs(
         //     ['email@gmail.com', 'email2@gmail.com']
         // );
