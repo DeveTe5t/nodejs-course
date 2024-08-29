@@ -12,22 +12,25 @@ export class Server {
     public static start() {
         console.log('Server started...');
 
-        CronService.createJob(
-            '*/5 * * * * *',
-            () => {
-                // const date = new Date();
-                // console.log('5 second', date);
-                const url = 'https://google.com';
-                new CheckService(
-                    fileSystemLogRepository,
-                    () => console.log(`${url} is ok`),
-                    (error) => console.log(`Error: ${error}`)
-                    // It could be used as below
-                    // undefined,
-                    // undefined,
-                ).execute(url);
-                // new CheckService().execute('http://localhost:3000/posts');
-            }
-        );
+        // send email
+
+
+        // CronService.createJob(
+        //     '*/5 * * * * *',
+        //     () => {
+        //         // const date = new Date();
+        //         // console.log('5 second', date);
+        //         const url = 'https://google.com';
+        //         new CheckService(
+        //             fileSystemLogRepository,
+        //             () => console.log(`${url} is ok`),
+        //             (error) => console.log(`Error: ${error}`)
+        //             // It could be used as below
+        //             // undefined,
+        //             // undefined,
+        //         ).execute(url);
+        //         // new CheckService().execute('http://localhost:3000/posts');
+        //     }
+        // );
     }
 }
