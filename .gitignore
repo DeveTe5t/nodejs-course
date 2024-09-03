@@ -22,3 +22,7 @@ coverage
 logs/
 
 .env
+
+mongo/
+postgres/
+prisma/

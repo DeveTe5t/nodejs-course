@@ -1,0 +1,10 @@
+node_modules
+# Keep environment variables out of version control
+.DS_Store
+.env
+package-lock.json
+dist/
+logs/
+mongo/
+postgres/
+prisma/

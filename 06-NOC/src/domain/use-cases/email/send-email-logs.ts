@@ -29,7 +29,7 @@ export class SendEmailLogs implements SendEmailLogsUseCase {
             return true;
         } catch (error) {
             const log = new LogEntity({
-                level: LogSeverityLevel.heigh,
+                level: LogSeverityLevel.high,
                 message: `${error}`,
                 origin: 'send-email-logs.ts',
             });
