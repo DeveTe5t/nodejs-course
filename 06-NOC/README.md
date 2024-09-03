@@ -31,4 +31,11 @@ POSTGRES_PASS=
     ```
     docker compose up -d
     ```
-5. Execute ```npm run dev```
+5. Execute the command
+    ```
+    npx prisma migrate dev
+    ```
+6. Execute ```npm run dev```
+
+## Get Gmail Key
+[Google AppPasswords](https://myaccount.google.com/u/0/apppasswords)

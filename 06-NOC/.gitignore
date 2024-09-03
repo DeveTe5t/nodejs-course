@@ -7,4 +7,3 @@ dist/
 logs/
 mongo/
 postgres/
-prisma/
