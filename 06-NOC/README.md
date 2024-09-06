@@ -4,7 +4,8 @@ The goal is to create a series of tasks using Clean Architecture with TypeScript
 
 # dev
 1. Clone the env.template file to .env
-2. Set up the environment variables
+2. Clone the env.test.template file to .env.test
+3. Set up the environment variables in .env and .env.test
 ```
 PORT=3000
 
@@ -26,16 +27,16 @@ POSTGRES_DB=
 POSTGRES_USER=
 POSTGRES_PASS=
 ```
-3. Execute the command ```npm install```
-4. Raise the databases with the command
+4. Execute the command ```npm install```
+5. Raise the databases with the command
     ```
     docker compose up -d
     ```
-5. Execute the command
+6. Execute the command
     ```
     npx prisma migrate dev
     ```
-6. Execute ```npm run dev```
+7. Execute ```npm run dev```
 
 ## Get Gmail Key
 [Google AppPasswords](https://myaccount.google.com/u/0/apppasswords)

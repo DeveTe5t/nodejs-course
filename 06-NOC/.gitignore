@@ -2,8 +2,11 @@ node_modules
 # Keep environment variables out of version control
 .DS_Store
 .env
+.env.test
 package-lock.json
 dist/
 logs/
 mongo/
 postgres/
+mongo-test/
+postgres-test/
