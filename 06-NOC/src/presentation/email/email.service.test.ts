@@ -1,8 +1,6 @@
 import nodemailer from 'nodemailer';
 import { EmailService, SendEmailOptions } from "./email.service";
 import { envs } from '../../config/plugins/envs.plugin';
-import { env } from 'process';
-
 
 describe('email-service.test.ts EmailService', () => {
 
