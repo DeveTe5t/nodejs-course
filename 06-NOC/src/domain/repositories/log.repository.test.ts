@@ -33,6 +33,7 @@ describe('log.respository.ts', () => {
         expect(mockLogRepository).toHaveProperty('saveLog');
         expect(mockLogRepository).toHaveProperty('getLogs');
 
+        // test arguments
         await mockLogRepository.saveLog(newLog);
         const logs = await mockLogRepository.getLogs(LogSeverityLevel.high);
         expect(logs).toHaveLength(1);

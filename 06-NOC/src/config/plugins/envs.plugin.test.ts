@@ -28,7 +28,7 @@ describe('envs.plugin.ts', () => {
         });
     });
 
-    test('should return error if nor found integer PORT', async () => {
+    test('should return error if not found integer PORT', async () => {
 
         // Arrange
         // jest.resetModules();
@@ -45,7 +45,7 @@ describe('envs.plugin.ts', () => {
             // "PORT" should be a valid integer: from console.log(error)       
             // Not working            
             // expect(error).toContain('"PORT" should be a valid integer');
-            // Working
+            // It Working
             expect(`${error}`).toContain('"PORT" should be a valid integer');
         }
     });

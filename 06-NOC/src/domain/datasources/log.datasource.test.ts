@@ -36,6 +36,7 @@ describe('log.datasource.ts', () => {
         expect(mockLogDatasource).toHaveProperty('saveLog');
         expect(mockLogDatasource).toHaveProperty('getLogs');
 
+        // test arguments
         await mockLogDatasource.saveLog(newLog);
         const logs = await mockLogDatasource.getLogs(LogSeverityLevel.high);
         expect(logs).toHaveLength(1);
