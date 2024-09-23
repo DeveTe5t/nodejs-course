@@ -12,6 +12,7 @@ export class TodoRoutes {
         // similar but not necesary because is parametes in the same order
         router.get('/', todoController.getTodos);
         router.get('/:id', todoController.getTodoById);
+        router.post('/', todoController.createTodo);
 
         return router;
     }

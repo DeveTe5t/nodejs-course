@@ -25,6 +25,8 @@ export class Server {
 
     async start() {
         // * Middleware
+        this.app.use(express.json());// raw
+        this.app.use(express.urlencoded({ extended: true }));// x-www-form-urlencoded
 
         // * Public folder        
         this.app.use(express.static(this.publicPath));
