@@ -11,6 +11,7 @@ export class TodoRoutes {
         // router.get('/api/todos', (req, res) => todoController.getTodos(req, res));
         // similar but not necesary because is parametes in the same order
         router.get('/', todoController.getTodos);
+        router.get('/:id', todoController.getTodoById);
 
         return router;
     }
