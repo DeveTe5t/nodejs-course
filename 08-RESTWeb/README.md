@@ -12,4 +12,8 @@ PUBLIC_PATH=public
     ```
     docker compose up -d
     ```
-5. Execute the command ```npm run dev```
+5. Execute the command
+    ```
+    npx prisma migrate dev
+    ```
+6. Execute the command ```npm run dev```
